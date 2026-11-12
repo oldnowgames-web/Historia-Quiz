@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17130f">
+<title>História Quiz — Uma jornada pelo tempo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand" onclick="app.showStart()" role="button" tabindex="0" aria-label="Voltar ao início">
+      <div class="brand-mark">🏛️</div><div><h1>HISTÓRIA QUIZ</h1><p>Uma jornada pelo tempo</p></div>
+    </div>
+    <div class="header-right">
+      <div class="header-chip">📜 10 assuntos</div><div class="header-chip">✦ 100 questões</div>
+      <button class="menu-toggle" id="menuToggle" onclick="app.toggleMenu()">☰ <span id="menuLabel">MENU</span></button>
+    </div>
+  </header>
+  <nav class="quick-menu" id="quickMenu" aria-label="Menu do jogo">
+    <div class="quick-head"><div><small>ARQUIVO HISTÓRICO</small><h2>Menu da jornada</h2></div><button class="quick-close" onclick="app.closeMenu()" aria-label="Fechar menu">✕</button></div>
+    <button class="quick-item" onclick="app.showCategories()"><span class="quick-icon">🗺️</span><span><b>Explorar assuntos</b><small>Viajar pelos 10 períodos e temas</small></span>›</button>
+    <button class="quick-item" onclick="app.showStats()"><span class="quick-icon">🏆</span><span><b>Meu progresso</b><small>Consultar acertos e recordes</small></span>›</button>
+    <button class="quick-item" onclick="app.showSettings()"><span class="quick-icon">⚙️</span><span><b>Configurações</b><small>Som e efeitos visuais</small></span>›</button>
+    <button class="quick-item" onclick="app.showHowTo()"><span class="quick-icon">📖</span><span><b>Como jogar</b><small>Regras e pontuação</small></span>›</button>
+    <button class="quick-item" onclick="app.showAbout()"><span class="quick-icon">🏺</span><span><b>Sobre o projeto</b><small>Conheça o História Quiz</small></span>›</button>
+    <div class="quick-foot">O menu pode ser acessado em qualquer tela.</div>
+  </nav>
+  <main id="view"></main>
+  <footer><span>© 2026 <strong>HISTÓRIA QUIZ</strong> • Conhecimento através do tempo</span><span>Passado, presente e descobertas em uma só jornada ✦</span></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
